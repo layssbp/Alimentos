@@ -17,3 +17,6 @@ Route::get('/home', function () {
 Route::get('/alimentos/novo', 'AlimentoController@create');
 
 Route::get('/tipos/novo', 'TipoController@create');
+Route::get('/tipos', 'TipoController@index');
+Route::get('/tipos/editar', 'TipoController@update');
+Route::get('/')
