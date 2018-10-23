@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/home', function () {
+    return view('home');
 });
+Route::get('/alimentos/novo', 'AlimentoController@create');
+
+Route::get('/tipos/novo', 'TipoController@create');
