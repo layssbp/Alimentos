@@ -38,7 +38,7 @@
                     </ul>
                 </li>
                 <li @if($current == "produtos") class = "active" @endif >
-                    <a href="#produtosSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Produtos</a>
+                    <a href="" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Alimentos</a>
                     <ul class="collapse list-unstyled" id="produtosSubmenu">
                         <li>
                             <a href="/alimentos/novo">Novo</a>

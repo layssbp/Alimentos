@@ -9,7 +9,7 @@ class TipoController extends Controller
 
     public function index()
     {
-        $tipos = Categoria::all();
+        $tipos = Tipo::all();
         return view('/tipos', compact('tipos'));
     }
 
