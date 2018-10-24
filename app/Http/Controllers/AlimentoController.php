@@ -21,7 +21,7 @@ class AlimentoController extends Controller
 
     public function store(Request $request)
     {
-        //
+        
     }
 
     public function show($id)

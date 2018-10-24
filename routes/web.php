@@ -11,12 +11,11 @@
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    return view('tipos');
 });
 Route::get('/alimentos/novo', 'AlimentoController@create');
 
 Route::get('/tipos/novo', 'TipoController@create');
 Route::get('/tipos', 'TipoController@index');
 Route::get('/tipos/editar', 'TipoController@update');
-Route::get('/')

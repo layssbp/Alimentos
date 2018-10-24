@@ -9,13 +9,13 @@ class TipoController extends Controller
 
     public function index()
     {
-        $tipo = Tipo::All();
-        return view('tipo-listar')
+        $tipos = Categoria::all();
+        return view('/tipos', compact('tipos'));
     }
 
     public function create()
     {
-        return view('tipo-cadastrar');
+        return view('/tipos/novo');
     }
 
     public function store(Request $request)
@@ -23,7 +23,7 @@ class TipoController extends Controller
         $tipo = newTipo();
         $tipo->nome = $request->input('nomeTipo');
         $tipo->save();
-        return redirect('/tipo-cadastar');
+        return redirect('/tipos');
     }
 
     public function show($id)

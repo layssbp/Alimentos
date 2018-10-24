@@ -1,4 +1,4 @@
-@extends('layout.base', ["current"=>"tipos"])
+@extends('layout.base', ['current'=>'tipos'])
 
 @section('body')
 <div>
@@ -11,7 +11,6 @@
 		<tr>
 			<td>{{$x -> nome}}</td>
 			<td>{{$x -> id}}</td>
-
 		<a class = "btn btn-outline-warning" href="/tipos/editar/{{$x->id}}">Editar</a>
         <a class = "btn btn-outline-danger" href="/tipos/deletar/{{$x->id}}">Excluir</a>
 		</tr>
